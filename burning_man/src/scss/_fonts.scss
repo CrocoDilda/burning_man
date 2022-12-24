@@ -1,0 +1,29 @@
+// Antonio
+@font-face {
+    font-family: 'Antonio';
+    src: local('ANTONIO Regular'), local('ANTONIO-Regular'),
+        url('../fonts/antonio/Antonio-Regular.woff2') format('woff2'),
+        url('../fonts/antonio/Antonio-Regular.woff') format('woff'),
+        url('../fonts/antonio/Antonio-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'ANTONIO';
+    src: local('ANTONIO Bold'), local('ANTONIO-Bold'),
+        url('../fonts/antonio/Antonio-Bold.woff2') format('woff2'),
+        url('../fonts/antonio/Antonio-Bold.woff') format('woff'),
+        url('../fonts/antonio/Antonio-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+// Open sans
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Regular'), local('Open-Sans-Regular'),
+        url('../fonts/open_sans/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/open_sans/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/open_sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

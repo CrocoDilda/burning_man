@@ -1,0 +1,177 @@
+// Да, тут тоже будут комменты  для дебилов. Без них никак)
+// Header
+.header {
+    font-family: 'Antonio';
+    padding-top: 57px;
+    position: absolute;
+    width: 100%;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__nav {
+        margin-left: -20vw; // лучше ничего не придумал
+        width: 305px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__items_link {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__link{
+        color: $white_color;
+        &:after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: $yellow_color;
+            display: flex;
+            transition: .2s all;
+            margin-top: 1px;
+        }
+        &:hover{
+            color: $yellow_color;
+            &:after{
+                content: "";
+                width: 100%;
+            }
+        }
+    }
+        .header__number {
+            height: auto;
+            position: relative;
+            margin-top: -2px;
+        &:after{
+            content: "";
+            margin-top: 5px;
+            position: absolute;
+        }
+    }
+}
+// Hero
+.hero {
+    background: url(../img/hero_bg.jpg) center center / cover, no-repeat;
+    min-height: 900px;
+    padding: 321px 0 0 0;
+    .hero__text{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white_color;
+        letter-spacing: 0.1em;
+        font-family: 'Antonio';
+
+    }
+    .hero__overhead {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .hero__title {
+        // Не могу убрать левый отступ текста от блока h1
+        letter-spacing: 0em;
+        font-size: 100px;
+        line-height: 145px;
+
+    }
+    .hero_btn {
+        font-size: 17px;
+        text-align: center;
+
+        width: 238px;
+        height: 57px;
+        left: 216px;
+        top: 521px;
+        border: 1px solid $white_color;
+        background: none;
+        transition: .2s all;
+        &:hover{
+            background: $white_color;
+            color: rgba(0, 0, 0, .5);
+        }
+    }
+}
+// Schedule
+.schedule {
+    font-family: 'Antonio';
+    color: $black_color;
+    padding-top: 113px;
+    .container {
+        display: flex;
+        flex-wrap:  wrap;
+    }
+    .schedule__title {
+        font-weight: 700;
+        font-size: 50px;
+        text-transform: uppercase;
+        min-width: 100%;
+    }
+    .schedule__column {
+        margin: 0 auto;
+        margin-top: 58px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 48%;
+        transform: translateX(-2%);
+        min-height: 671px;
+        .schedule__title_small {
+            font-weight: 400;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .schedule__text {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: justify;
+            max-width: 100%;
+        }
+        .schedule__image {
+            max-height: 50%;
+            align-self: flex-end;
+            &.schedule__image_small{
+                max-width: 50%;
+
+            }
+            &.schedule__image_big{
+                max-width: 100%;
+            }
+        }
+
+    }
+}
+// Footer
+.footer {
+    font-family: 'Open Sans';
+    height: 243px;
+    display: flex;
+    align-items: center;
+    .container {
+    width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer__text{
+        width: 25%;
+        min-width: 218px;
+        &:first-child{
+            margin-right: 3vw;
+        }
+    }
+}
